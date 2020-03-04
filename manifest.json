@@ -18,7 +18,11 @@
     }
   ],
   "permissions": [
-    "tabs"
+    "tabs",
+    "storage",
+    "https://www.ethercalc.org/*",
+    "https://www.ethercalc.org/",
+    "https://www.ethercalc.org/_/"
   ],
   "manifest_version": 2
 }
