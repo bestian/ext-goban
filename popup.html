@@ -10,16 +10,17 @@ button {
 </head>
 <body>
 	<h4>add current page to goban</h4>
-	Id:<input id ="gobanID" required="required" autofocus="true" type="text" name="gobanID" placeholder="choose a goban" list="gobans" />
+	<b>Id:</b><input id ="gobanID" required="required" autofocus="true" type="text" name="gobanID" placeholder="choose a goban" list="gobans" />
 	<datalist id ="gobans">
 	</datalist>
 	<br/>
-	Lev:<input id ="gobanLev" type="number" name="gobanLev" value="0" min="0" max="3" />
+	<b>Lev:</b><input id ="gobanLev" type="number" name="gobanLev" value="0" min="0" max="3" />
 	<br/>
 	<button id = "link">
 		add
 	</button>
-	<h4>View</h4>
+	<hr/>
+	<h4>Visit <a href="http://goban.tw" target="_blank">goban.tw</a>: </h4>
 	<ul id="links">
 	</ul>
 </body>

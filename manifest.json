@@ -10,13 +10,6 @@
       "default_title": "Goban",
       "default_popup": "popup.html"
   },
-  "content_scripts": [
-    {
-      "matches": ["*://*/*"],
-      "css": ["content.css"],
-      "js": ["content.js"]
-    }
-  ],
   "permissions": [
     "tabs",
     "storage",
