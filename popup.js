@@ -1,8 +1,23 @@
+var getGobans = function(){
+  console.log( 'GET' );
+  $.get( "https://goban-hub.firebaseio.com/gobans.json", function( data ) {
+    console.log( data );
+    var keys = Object.keys(data)
+    console.log(keys)
+    keys.forEach(function(k){
+      $('#gobans').append(new Option(k, k));
+      $('#links').append('<li><a class="url" href="http://goban.tw/#/see/'+ k +'/0/new" target="_blank">'+ k +'</a></li>')
+    })
+  });
+}
+
+setTimeout(getGobans, 200)
+
 var getTab = function(tab){
 	var id = document.getElementById('gobanID').value;
 	var lev = document.getElementById('gobanLev').value;
     var url = 'https://ethercalc.org/_/' + id + lev
-    var data = encodeURIComponent(tab.url)+','+ encodeURIComponent(tab.title)
+    var data = tab.url+','+ encodeURIComponent(tab.title)
    $.ajax({
     url: url,
     type: 'POST',
