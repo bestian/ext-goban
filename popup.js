@@ -25,6 +25,7 @@ var getTab = function(tab){
     processData: false,
     data: data
   });
+  window.alert('URL upload')
 };
 
 document.addEventListener('DOMContentLoaded', function() {
