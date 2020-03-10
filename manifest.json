@@ -12,7 +12,6 @@
   },
   "permissions": [
     "tabs",
-    "storage",
     "https://www.ethercalc.org/*",
     "https://www.ethercalc.org/",
     "https://www.ethercalc.org/_/"
