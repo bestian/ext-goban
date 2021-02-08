@@ -16,6 +16,9 @@ setTimeout(getGobans, 200)
 var getTab = function(tab){
 	var id = document.getElementById('gobanID').value;
 	var lev = document.getElementById('gobanLev').value;
+  if (lev === -1 ) {
+    lev = ''
+  }
     var url = 'https://ethercalc.org/_/' + id + lev
     var data = tab.url+','+ encodeURIComponent(tab.title)
    $.ajax({
