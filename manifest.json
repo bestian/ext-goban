@@ -5,16 +5,19 @@
   "icons": { "16": "icon16.png",
   			"48": "icon48.png",
   			"128": "icon128.png" },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "browser_action": {
+      "default_icon": { "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png" },
       "default_title": "Goban",
       "default_popup": "popup.html"
   },
   "permissions": [
-    "tabs",
-    "https://www.ethercalc.org/*",
-    "https://www.ethercalc.org/",
-    "https://www.ethercalc.org/_/"
+    "activeTab",
+    "https://ethercalc.net/*",
+    "https://ethercalc.net/",
+    "https://ethercalc.net/_/"
   ],
-  "manifest_version": 3
+  "manifest_version": 2
 }

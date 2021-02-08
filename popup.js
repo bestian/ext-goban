@@ -19,7 +19,7 @@ var getTab = function(tab){
   if (lev === -1 ) {
     lev = ''
   }
-    var url = 'https://ethercalc.org/_/' + id + lev
+    var url = 'https://ethercalc.net/_/' + id + lev
     var data = tab.url+','+ encodeURIComponent(tab.title)
    $.ajax({
     url: url,
